@@ -1,2 +1,2 @@
 //Angular Application For support System...
-var myApp = angular.module('examify', ['ngRoute', 'ngAvatar']);
+var myApp = angular.module('examify', ['ngRoute']);

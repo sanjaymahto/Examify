@@ -56,42 +56,42 @@ myApp.factory('queryService', function queryFactory($http, authService, $q) {
 
     // request to Create a Question by Admin
     queryArray.createQuestion = function (data) {
-        console.log(data.id);
+        //console.log(data.id);
         return $http.post(baseUrl + '/tests/' + data.id + '/createquestions?token=' + authService.getToken(), data);
     }
 
 
     // request to delete a Test by Admin
     queryArray.deleteTest = function (data) {
-        console.log(data);
+       // console.log(data);
         return $http.delete(baseUrl + '/tests/test/delete/' + data + '?token=' + authService.getToken(), data);
     }
 
     // request to view Questions by Admin
     queryArray.viewQuestion = function (data) {
-        console.log(data);
+       // console.log(data);
         return $http.get(baseUrl + '/tests/' + data + '/getquestions?token=' + authService.getToken(), data);
     }
 
     // request to Update test by Admin
     queryArray.UpdateTest = function (data) {
-        console.log(data.id);
+        //console.log(data.id);
         return $http.put(baseUrl + '/tests/test/update/' + data.id + '?token=' + authService.getToken(), data);
     }
 
     // request to Update test by Admin
     queryArray.DeleteQuestion = function (data, index, quesid) {
-        console.log(data);
-        console.log(index);
-        console.log(quesid);
+        //console.log(data);
+        //console.log(index);
+        //console.log(quesid);
         return $http.get(baseUrl + '/tests/question/' + data.id + '/' + index + '/' + quesid + '/delete?token=' + authService.getToken());
     }
 
     // request to Update test by Admin
     queryArray.updateQuestion = function (data, index, quesid) {
-        console.log(data);
-        console.log(index);
-        console.log(quesid);
+       // console.log(data);
+       // console.log(index);
+       // console.log(quesid);
         return $http.post(baseUrl + '/tests/question/' + data.id + '/' + index + '/' + quesid + '/update?token=' + authService.getToken(), data);
     }
 
@@ -112,7 +112,7 @@ myApp.factory('queryService', function queryFactory($http, authService, $q) {
 
     //Query to get questions for single test
     queryArray.getSingleTest = function (singleTestId) {
-        console.log(singleTestId);
+        //console.log(singleTestId);
         return $http.get(baseUrl + '/tests/test/' + singleTestId + '?token=' + authService.getToken());
     }
 

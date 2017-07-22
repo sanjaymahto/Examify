@@ -112,7 +112,7 @@ var port = 3000;
 app.use(logger('dev'));
 
 //Data Base Connection
-var dbPath = "mongodb://localhost/examifyTestPortalDataBase";
+var dbPath = "mongodb://localhost/TestPortalDB";
 mongoose.connect(dbPath);
 mongoose.connection.once('open',function(){
   console.log("Database Connection Established Successfully...");
