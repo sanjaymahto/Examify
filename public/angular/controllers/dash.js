@@ -57,9 +57,18 @@ myApp.controller('dashCtrl', ['$filter', '$http', '$location', '$routeParams', '
                 } else {
 
                     var data = response.data.data;
+                    console.log(data)
                     main.testtakenDetails = data;
-                    //console.log(data);
+                    main.testtakenDetailsforgraph = [];
+                    main.testtakenDetailslabels = [];
                     var len = data.length;
+                    for(var i=0;i<data.length;i++)
+                    {
+                            main.testtakenDetailsforgraph.push(data[i].score);
+                            main.testtakenDetailslabels.push(data[i]._id)
+                    }
+                    console.log(main.testtakenDetailsforgraph);
+                    console.log(main.testtakenDetailslabels);
                     if (len == 0) {
                         main.testtaken = "No Tests Given";
                         main.averagemarks = "0";
