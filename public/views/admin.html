@@ -21,83 +21,87 @@
         <h1 align="center" style="color:white;">: {{admin.heading}} :</h1>
         <br>
         <div class="row container-fluid">
-            &nbsp;
-            <div class="col-sm-4  w3-card-2" style="width:33%;">
+        &nbsp;
+            <div class="container col-sm-4  w3-card-2" style="width:33%;">
                 <header class="w3-container w3-green">
-                    <h1 align="center">Create/View/Update and Delete Tests</h1>
+                    <h3 align="center">Test Operations</h3>
                 </header>
                 <div class="w3-container w3-white">
-                    <p align="center"><img align="center" src="img/testCreation.png" class="img-fluid" alt="Responsive image" /></p>
+                    <p align="center"><img align="center" src="img/testCreation.png" class="img-fluid img-responsive" alt="Responsive image" /></p>
                 </div>
                 <footer class="w3-container w3-blue">
                     <h5 align="center">
                         <!-- Trigger the modal with a button -->
-                        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
- Create</button>&nbsp;
-                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal2">
-  &nbsp;View&nbsp;</button>&nbsp;
-                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalUpdateTestinitiater">
+                        <button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModal">
+ Create</button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
+  View</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalUpdateTestinitiater">
   Update</button>
-                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModalDeleteTest">
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModalDeleteTest">
   Delete</button>
                     </h5>
                 </footer>
             </div>
-            <div class="col-sm-4 w3-card-2" style="width:33%;">
+                 &nbsp;
+            <div class=" container col-sm-4 w3-card-2" style="width:32%;">
                 <header class="w3-container w3-green">
-                    <h1 align="center">Create/View Questions</h1>
+                    <h3 align="center">Create/View Questions</h3>
                 </header>
                 <div class="w3-container w3-white">
-                    <p align="center"><img align="center" src="img/question.png" class="img-fluid" alt="Responsive image" /></p>
+                    <p align="center"><img align="center" src="img/question.png" class="img-fluid img-responsive" alt="Responsive image" /></p>
                 </div>
                 <footer class="w3-container w3-blue">
-                    <h5 align="center"><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal1">
-  &nbsp;&nbsp;&nbsp;Create&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalViewQuestions">
+                    <h5 align="center"><button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModal1">
+  &nbsp;&nbsp;&nbsp;Create&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalViewQuestions">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></h5>
                 </footer>
             </div>
-            <div class="col-sm-4 w3-card-2" style="width:33%;">
+            &nbsp;
+            <div class=" container col-sm-4 w3-card-2" style="width:33%;">
                 <header class="w3-container w3-green">
-                    <h1 align="center">Update/Delete Question</h1>
+                    <h3 align="center">Update/Delete Question</h3>
                 </header>
                 <div class="w3-container w3-white">
-                    <p align="center"><img align="center" src="img/testupdation.png" class="img-fluid" alt="Responsive image" /></p>
+                    <p align="center"><img align="center" src="img/testupdation.png" class="img-fluid img-responsive" alt="Responsive image" /></p>
                 </div>
                 <footer class="w3-container w3-blue">
-                    <h5 align="center"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalUpdateTestQuestion">
+                    <h5 align="center"><button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModalUpdateTestQuestion">
   &nbsp;&nbsp;&nbsp;Update&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModalUpdateQuestion">
+                        <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModalUpdateQuestion">
   &nbsp;&nbsp;&nbsp;Delete&nbsp;&nbsp;&nbsp;</button></h5>
                 </footer>
             </div>
+                 &nbsp;
         </div>
         <br/>
         <div class="row container-fluid">
-            <div class="col-sm-4 w3-card-2" style="width:50%;">
+            <div class=" container col-sm-4 w3-card-2" style="width:49%;">
                 <header class="w3-container w3-green">
-                    <h1 align="center">User Details</h1>
+                    <h3 align="center">User Details</h3>
                 </header>
                 <div class="w3-container w3-white">
-                    <p align="center"><img align="center" src="img/user.png" class="img-fluid" alt="Responsive image" /></p>
+                    <p align="center"><img align="center" src="img/user.png" class="img-fluid img-responsive" alt="Responsive image" /></p>
                 </div>
                 <div class="w3-container w3-white">
-                    <h5 align="center"><button type="button" class="btn btn-success btn-lg" ng-click="admin.getUserInfo()">
-  &nbsp;&nbsp;&nbsp;Local User&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btn-lg" ng-click="admin.getUserInfofacebook()">
+                    <h5 align="center"><button type="button" class="btn btn-success " ng-click="admin.getUserInfo()">
+  &nbsp;&nbsp;&nbsp;Local User&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary " ng-click="admin.getUserInfofacebook()">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button type="button" class="btn btn-primary btn-lg" ng-click="admin.getUserInfogoogle()">
+                        <button type="button" class="btn btn-primary " ng-click="admin.getUserInfogoogle()">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></h5>
                 </div>
             </div>
-            <div class="col-sm-4 w3-card-2" style="width:50%;">
+            &nbsp;
+            <div class=" container col-sm-4 w3-card-2" style="width:49%;">
                 <header class="w3-container w3-green">
-                    <h1 align="center">Performance Details</h1>
+                    <h3 align="center">Performance Details</h3>
                 </header>
                 <div class="w3-container w3-white">
-                    <p align="center"><img align="center" src="img/performance.png" class="img-fluid" alt="Responsive image" /></p>
+                    <p align="center"><img align="center" src="img/performance.png" class="img-fluid img-responsive" alt="Responsive image" /></p>
                 </div>
                 <div class="w3-container w3-white">
-                    <h5 align="center"><button type="button" class="btn btn-success btn-lg" ng-click="admin.getUserInfoforperformance()">
+                    <h5 align="center"><button type="button" class="btn btn-success " ng-click="admin.getUserInfoforperformance()">
   &nbsp;&nbsp;&nbsp;All Users&nbsp;&nbsp;&nbsp;</button></h5>
                 </div>
             </div>
@@ -107,7 +111,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div class=" container col-lg-12 text-center">
                         <p>Copyright &copy; Examify - Test Portal
                             <br/>Designed By- Sanjay Kumar Mahto<br/>
                             <br/>Connect With Me:<br/>

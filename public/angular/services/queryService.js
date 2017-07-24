@@ -24,7 +24,7 @@ myApp.factory('queryService', function queryFactory($http, authService, $q) {
     //login request for google
     queryArray.loginGoogle = function () {
         return $http.get('/auth/google');
-        //window.location.href="/auth/google";
+         //return location.replace("/auth/google")
     }
 
     //login request for reset password

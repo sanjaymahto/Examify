@@ -54,7 +54,7 @@ myApp.controller('liveCtrl', ['$scope', '$filter', '$http', '$location', '$route
 
         $('.thisismodalforlivetestwarning').modal('hide');
         //console.log(main.userId);
-        window.location.href = "#/takeTest/" + main.userId;
+        location.replace("#/takeTest/" + main.userId)
     })
 
 
