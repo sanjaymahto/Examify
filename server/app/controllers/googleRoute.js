@@ -65,7 +65,7 @@ module.exports = function (app, passport) {
     passport.use(new GoogleStrategy({
             clientID: GOOGLE_CLIENT_ID,
             clientSecret: GOOGLE_CLIENT_SECRET,
-            callbackURL: "http://localhost:3000/auth/google/callback",
+            callbackURL: "http://ec2-54-179-155-238.ap-southeast-1.compute.amazonaws.com:3000/auth/google/callback",
             passReqToCallback: true
         },
         function (request, accessToken, refreshToken, profile, done) {
@@ -127,10 +127,6 @@ module.exports = function (app, passport) {
             var response = resGenerator.generate(false, "Logged in Successfully", 200, user);
             response.token = token;
             res.json(response);
-
-
-
-
         });
 
     function ensureAuthenticated(req, res, next) {
